@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Legal Justice</title>
 
+    <!-- favicon -->
+    <link rel="icon" href="./images/justice-scale.png" />
     <!-- font Cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,6 +27,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "primary-golden": "#B68C5A",
             },
           },
         },
@@ -40,8 +43,83 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="font-garamond">
-    <header></header>
-    <main></main>
+    <header class="w-3/4 mx-auto">
+      <!-- Navbar Section -->
+      <div class="navbar mt-2">
+        <div class="navbar-start space-x-2">
+          <img class="w-10" src="images/business.png" alt="" />
+          <a class="font-bold text-2xl">Justice</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal text-xl">
+            <li><a>Home</a></li>
+            <li>
+              <a>Services <span class="text-xl font-bold"> ></span></a>
+            </li>
+            <li>
+              <a>Cases <span class="text-xl font-bold"> ></span></a>
+            </li>
+            <li>
+              <a>Blog <span class="text-xl font-bold"> ></span></a>
+            </li>
+            <li>
+              <a>Contact <span class="text-xl font-bold"> ></span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button class="btn bg-primary-golden">Free Consultation</button>
+        </div>
+      </div>
+      <!-- Banner Section -->
+      <div class="py-20">
+        <div
+          class="hero min-h-[500px]"
+          style="background-image: url(images/banner.png)"
+        >
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-neutral-content text-center">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold text-white">
+                We Provide Effective Legal Solutions
+              </h1>
+              <p class="mb-5 text-white text-xl">
+                We provide effective legal solutions tailored to meet your
+                unique needs. With a focus on trust, expertise, and personalized
+                service.
+              </p>
+              <!-- Search Section -->
+              <div class="flex space-x-5">
+                <input
+                  placeholder="     Search Your Services"
+                  class="w-3/4 rounded-md"
+                  type="text"
+                />
+                <button class="btn bg-primary-golden px-10 font-bold text-xl">
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Legal Practice Area -->
+
+      <section class="w-3/4 mx-auto pd-20">
+        <div class="text-center space-y-5">
+          <h1 class="font-bold text-3xl">The Legal Practice Area</h1>
+          <p class="text-xl w-3/4 mx-auto">
+            Legal practice areas in a court refer to the different fields of law
+            that attorneys specialize in while representing clients in legal
+            matters. Courts handle a variety of cases, and lawyers focus on
+            specific practice areas to provide expert legal advice and
+            representation.
+          </p>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
